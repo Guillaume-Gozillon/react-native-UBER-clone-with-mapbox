@@ -1,10 +1,11 @@
-import { StyleSheet, Text, SafeAreaView, View, Image } from 'react-native'
+import { StyleSheet, SafeAreaView, View, Image } from 'react-native'
 import tw from 'tailwind-react-native-classnames'
 import NavOptions from '../components/NavOptions'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 import { GOOGLE_MAPS_KEY } from '@env'
 import { useDispatch } from 'react-redux'
 import { setDestination, setOrigin } from '../slices/navSlice'
+import NavFavourites from '../components/NavFavourites'
 
 const HomeScreen = () => {
   const dispatch = useDispatch()
@@ -18,7 +19,7 @@ const HomeScreen = () => {
           }}
         />
         <GooglePlacesAutocomplete
-          placeholder='Where from?'
+          placeholder='Saisissez un lieu de départ'
           enablePoweredByContainer={false}
           styles={{
             container: {
@@ -48,6 +49,7 @@ const HomeScreen = () => {
           debounce={400}
         />
         <NavOptions />
+        <NavFavourites />
       </View>
     </SafeAreaView>
   )
