@@ -1,13 +1,13 @@
 export const data = [
   {
     id: '123',
-    title: 'Get a ride',
+    title: 'Course',
     image: 'https://links.papareact.com/3pn',
     screen: 'MapScreen'
   },
   {
     id: '456',
-    title: 'Order food',
+    title: 'Repas',
     image: 'https://links.papareact.com/28w',
     screen: 'EatsScreen'
   }
@@ -17,20 +17,20 @@ export const dataFav = [
   {
     id: '567',
     icon: 'home',
-    location: 'Home',
+    location: 'Domicile',
     destination: 'Code Street, London, KU'
   },
   {
     id: '678',
     icon: 'briefcase',
-    location: 'Work',
+    location: 'Travail',
     destination: 'London Ey, London, UK'
   }
 ]
 export const dataTotal = [
   {
     id: 'Uber-X-123',
-    title: 'Uber X',
+    title: 'UberX',
     multiplier: 1,
     image: 'https://links.papareact.com/3pn'
   },
@@ -42,7 +42,7 @@ export const dataTotal = [
   },
   {
     id: 'Uber-LUX-484',
-    title: 'Uber LUX',
+    title: 'Berline',
     multiplier: 1.75,
     image: 'https://links.papareact.com/7pf'
   }
